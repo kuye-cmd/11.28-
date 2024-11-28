@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    # 5. 请编写一段逻辑将任意数字数组中的偶数求和。
+</body>
+<script>
+    var arr=[];
+    while(1) {
+        if (arr[arr.length-1]==-100) {
+            arr.pop();
+            break;
+        }
+        arr.push(Number(prompt("输入一串数组,输入-100结束")))
+    }
+    var sum=0;
+    for(var i=0;i<arr.length;i++){
+        if (arr[i]%2==0) {
+            sum+=arr[i];
+        }
+    }
+    console.log(arr);
+    alert(sum);
+    
+</script>
+</html>

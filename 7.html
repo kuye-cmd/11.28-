@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    # 7. 请编写一段逻辑将包含嵌套数组的数组处理后返回一个新数组，
+    其中所有元素都被扁平化到同一层级。
+</body>
+<script>
+    var arr=[1,2,3,[45,2,3],[89]];
+    var arr1=[];
+    var n=0;
+    for(var i=0;i<arr.length;i++){
+        if (Array.isArray(arr[i])==true) {
+            for(var j=0;j<arr[i].length;j++){
+                arr.push(arr[i][j]);
+            }
+        }else{
+            arr1.push(arr[i]);
+        }
+}
+    console.log(arr1);
+</script>
+</html>

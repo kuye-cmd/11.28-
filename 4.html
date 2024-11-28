@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    # 4. 请编写一段逻辑生成一个长度为 15 的斐波那契数列的数组([1,1,2,3,5,8...])。
+</body>
+<script>
+    var arr=[];
+    var n=15;
+    for(var i=0;i<n;i++){
+        if (i<=1) {
+            arr.push(1);
+        }else{
+            arr[i]=arr[i-1]+arr[i-2];
+        }
+    }
+    console.log(arr);
+    
+</script>
+</html>

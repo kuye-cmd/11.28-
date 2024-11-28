@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    # 3. 请编写一段逻辑查找数组中的最大值和最小值。
+    
+        例子: [1, 2, 3, 4] => 最大值：4 最小值 1
+</body>
+<script>
+    var arr=[];
+    while(1) {
+        if (arr[arr.length-1]==-100) {
+            arr.pop();
+            break;
+        }
+        arr.push(Number(prompt("输入一串数组,输入-100结束")))
+    }
+    console.log(arr);
+    
+    // var arr1=[];
+    max=arr[0];
+    min=arr[0];
+    for(var i=1;i<arr.length;i++){
+        if(max<arr[i]){
+            max=arr[i];
+        } 
+        if(min>arr[i]){
+            min=arr[i];
+        }       
+    }
+    console.log(max,min);
+    alert("最大值是"+max+"最小值是"+min)
+    
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    # 11. 给定任意一个数字数组和目标值 target, 找出数组两个元素之和等于 target 的下标数组
+        
+    例子: [1,2,3,4] 、 2 => null
+    例子: [1,2,3,4] 、 3 => [0, 1]
+</body>
+<script>
+    var arr=[1,2,3,4,5,6,7,8];
+    var a=Number(prompt("输入一个数字"));
+    var c=null;
+    for(var i=0;i<arr.length;i++){
+        for(var j=i+1;j<arr.length;j++){
+            if (arr[i]+arr[j]==a) {
+                c=i+','+j;
+                break;
+            }
+        }
+    }
+    console.log(c);
+    alert(c);
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    # 8. 请编写一段逻辑编在一个数组检索一个目标值返回目标值在数组中的索引。
+    如果目标值不存在于数组中，则返回-1。（两种方法）
+    
+    例子: [1,2,3] 、 1 => 0
+    例子: [1,2,3] 、 4 => -1
+</body>
+<script>
+    var arr=[];
+    while(1) {
+        if (arr[arr.length-1]==-100) {
+            arr.pop();
+            break;
+        }
+        arr.push(Number(prompt("输入一串数组,输入-100结束")))
+    }
+    var a=Number(prompt("输入数字"));
+    for(var i=0;i<arr.length;i++){
+        if (arr[i]==a) {
+            break;
+        }
+    }
+    if (i==arr.length) {
+        alert('-1')
+    }else{
+        alert(i)
+    }
+</script>
+</html>

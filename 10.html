@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    # 10. 请编写一段逻辑将一个数组分组处理
+    （将数组中的元素按每 k 个一组进行分组，并返回二维数组。
+    如果数组长度不能被 k 整除，则最后一组可能包含少于 k 个元素）。
+    
+        例子: [1,2,3,4] 、 2 => [[1,2],[3,4]]
+        例子: [1,2,3] 、 2 => [[1,2],[3]]
+</body>
+<script>
+    var arr=[1,2,3,4,5,6,7,8,9,10,11,12,13];
+    var str=""
+    var a=Number(prompt("输入几个一组"));
+    var arr1=[];
+    var arr2=[];
+    for(var i=0;i<arr.length;i++){
+        if (arr1.length==a) {
+            str=str+arr1+" ";
+            arr1.splice(0,a)
+        }
+        arr1.push(arr[i]);
+    }
+    if(arr.length%a!=0){
+        str=str+arr1+" ";
+        arr=str.split(" ");
+        arr.pop();
+    }else{
+        arr=str.split(" ");
+        arr.pop();
+    }
+    console.log(arr);
+</script>
+</html>
